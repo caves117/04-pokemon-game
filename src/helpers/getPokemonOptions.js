@@ -6,7 +6,6 @@ export const getPokemons = () => {
 }
 
 export const getPokemonOptions = async() => {
-    console.log(getPokemons())
     const mixedPokemons = getPokemons().sort( () => Math.random() - 0.5 )
     const pokemons = await getPokemonNames( mixedPokemons.splice(0,4))
     
